@@ -11,6 +11,7 @@ Install Xcode
 
 Check:
   xcode-select --version
+  git --version
 
 ******************************************************
 
@@ -22,6 +23,16 @@ Install HomeBrew
 Check:
   brew --version
 
+******************************************************
+
+Install Git (if not already there)
+-----------
+
+  brew install git
+  
+Check:
+  git --version
+  
 ******************************************************
 
 Install Python3
@@ -65,23 +76,12 @@ Check:
 
 ******************************************************
 
-Create the project folder structure:
-  IMAGING
-    bftools
-    image_stacks
-    notebooks
-
-******************************************************
-
-Install Bio-Formats
+Download Appication
 -------------------
 
-URL: docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/index.html
-  Download bftools.zip
-  Move bftools.zip to bftools folder and unzip
+Navigate to where you want the project to go, then...
+  git clone
 
-Check:
-  ./IMAGING/bftools/formatlist
 
 ******************************************************
 ******************************************************
