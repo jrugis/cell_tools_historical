@@ -1,0 +1,98 @@
+******************************************************
+******************************************************
+SETUP AND INSTALLATION
+******************************************************
+******************************************************
+
+Install Xcode
+-------------
+
+  xcode-select --install
+
+Check:
+  xcode-select --version
+
+******************************************************
+
+Install HomeBrew
+----------------
+
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+Check:
+  brew --version
+
+******************************************************
+
+Install Python3
+---------------
+
+ brew install python3
+
+Check:
+  python3 --version
+  pip3 --version
+
+******************************************************
+
+Install python packages
+-----------------------
+
+  pip3 install numpy scipy
+  pip3 install matplotlib
+  pip3 install scikit-image
+  pip3 install opencv-python
+  pip3 install notebook
+
+******************************************************
+
+Install Java JDK
+----------------
+
+URL: www.oracle.com/java/technologies/javase-jdk8-downloads.html
+  macOS x64
+    jdk-8u241-macosx-x64.dmg
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+export CFLAGS="-I/usr/local/lib/python3.7/site-packages/numpy/core/include/"
+
+Check:
+  java -version
+    java 14 2020-03-17
+    Java(TM) SE Runtime Environment (build 14+36-1461)
+    Java HotSpot(TM) 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
+
+******************************************************
+
+Create the project folder structure:
+  IMAGING
+    bftools
+    image_stacks
+    notebooks
+
+******************************************************
+
+Install Bio-Formats
+-------------------
+
+URL: docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/index.html
+  Download bftools.zip
+  Move bftools.zip to bftools folder and unzip
+
+Check:
+  ./IMAGING/bftools/formatlist
+
+******************************************************
+******************************************************
+RUN NOTEBOOK
+******************************************************
+******************************************************
+
+Launch Notebook
+---------------
+ 
+ jupyter lab
+
+******************************************************
+******************************************************
