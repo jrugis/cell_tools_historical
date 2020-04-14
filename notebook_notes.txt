@@ -25,16 +25,6 @@ Check:
 
 ******************************************************
 
-Install Git (if not already there)
------------
-
-  brew install git
-  
-Check:
-  git --version
-  
-******************************************************
-
 Install Python3
 ---------------
 
@@ -55,26 +45,6 @@ Install python packages
   pip3 install jupyterlab
 
 ******************************************************
-
-Install Java JDK
-----------------
-
-URL: www.oracle.com/java/technologies/javase-jdk8-downloads.html
-  macOS x64
-    jdk-8u241-macosx-x64.dmg
-
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home"
-export PATH="$JAVA_HOME/bin:$PATH"
-export CFLAGS="-I/usr/local/lib/python3.7/site-packages/numpy/core/include/"
-
-Check:
-  java -version
-    java 14 2020-03-17
-    Java(TM) SE Runtime Environment (build 14+36-1461)
-    Java HotSpot(TM) 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
-
-
-******************************************************
 ******************************************************
 Install and run the project notebook
 ******************************************************
@@ -86,16 +56,20 @@ Download the plot_apical project
 Navigate to where you want the project to go, then...
   git clone https://github.com/jrugis/plot_apical.git
 
-cd plot_apical
-pwd
-  xxxxx
-export PATH=$PATH:xxxxx/bftools
+Copy oir files to folder: plot_apical/IMAGING/image_stacks/ 
+
+
+Use Fiji to convert oir files to tif's
+--------------------------------------
+
+  Within Fiji, run macro: plot_apical/IMAGING/image_stacks/oir2tif.ijm
+
 
 Launch Notebook
 ---------------
  
- jupyter lab
-   Navigate to and launch the notebook: apical_ROI_plots.ipynb
+  jupyter lab
+    Navigate to and launch the notebook: apical_ROI_plots.ipynb
 
 ******************************************************
 ******************************************************
