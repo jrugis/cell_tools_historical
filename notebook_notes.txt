@@ -86,6 +86,7 @@ Download the plot_apical project
 Navigate to where you want the project to go, then...
   git clone https://github.com/jrugis/plot_apical.git
 
+cd plot_apical
 pwd
   xxxxx
 export PATH=$PATH:xxxxx/bftools
