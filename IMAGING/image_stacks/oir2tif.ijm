@@ -23,5 +23,5 @@ function processFile(folder, file) {
     print("Saving to: " + folder);
     saveAs("TIFF", folder+file);
     close();
-    File.delete(folder + file);
+    //File.delete(folder + file);
 }
