@@ -73,3 +73,17 @@ Launch Notebook
 
 ******************************************************
 ******************************************************
+Update project notebook to latest version
+******************************************************
+******************************************************
+
+Navigate into your plot_apical folder, then...
+  git fetch origin
+  git reset --hard origin/master
+  
+NOTE: This operation will leave your results folder intact, but
+      will overwrite any changes that you made in your copy of 
+      the notebook !!!!!! 
+
+******************************************************
+******************************************************
