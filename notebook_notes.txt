@@ -25,6 +25,17 @@ Check:
 
 ******************************************************
 
+Install NodeJS
+--------------
+
+  brew install node
+  
+Check:
+  node -v
+  npm -v  
+
+******************************************************
+
 Install Python3
 ---------------
 
@@ -39,11 +50,19 @@ Check:
 Install python packages
 -----------------------
 
-  pip3 install numpy scipy
-  pip3 install matplotlib
-  pip3 install scikit-image
-  pip3 install jupyterlab
+  pip3 install numpy scipy matplotlib scikit-image
+  pip3 install jupyterlab ipywidgets ipyfilechooser
 
+******************************************************
+
+Install JupyterLab extension
+----------------------------
+
+  jupyter labextension install @jupyter-widgets/jupyterlab-manager
+  
+Check:
+  jupyter labextension list
+  
 ******************************************************
 ******************************************************
 Install and run the project notebook
