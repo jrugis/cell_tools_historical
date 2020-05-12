@@ -50,8 +50,8 @@ Check:
 Install python packages
 -----------------------
 
-  pip3 install numpy scipy matplotlib scikit-image
-  pip3 install jupyterlab ipywidgets ipyfilechooser
+  pip3 install numpy scipy matplotlib scikit-image scikit-learn
+  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
 
 ******************************************************
 
@@ -59,7 +59,9 @@ Install JupyterLab extension
 ----------------------------
 
   jupyter labextension install @jupyter-widgets/jupyterlab-manager
-  
+  jupyter labextension install jupyter-matplotlib
+  jupyter nbextension enable --py widgetsnbextension 
+
 Check:
   jupyter labextension list
   

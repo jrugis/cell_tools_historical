@@ -5,4 +5,7 @@ results/
 *.oir
 *.tif
 *.png
+*.csv
+*.pvsm
+
 
