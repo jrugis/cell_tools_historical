@@ -51,7 +51,7 @@ Install python packages
 -----------------------
 
   pip3 install numpy scipy matplotlib scikit-image scikit-learn
-  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
+  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl pdf2image
 
 ******************************************************
 
