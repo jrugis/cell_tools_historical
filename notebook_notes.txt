@@ -36,6 +36,16 @@ Check:
 
 ******************************************************
 
+Install ffmpeg
+--------------
+
+  brew install ffmpeg
+  
+Check:
+  ffmpeg 
+
+******************************************************
+
 Install Python3
 ---------------
 
@@ -51,7 +61,7 @@ Install python packages
 -----------------------
 
   pip3 install numpy scipy matplotlib scikit-image scikit-learn
-  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl pdf2image
+  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
 
 ******************************************************
 
