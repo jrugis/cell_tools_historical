@@ -2,7 +2,6 @@ __pycache__/
 .DS_Store
 
 results/
-*checkpoint.ipynb
 *.oir
 *.tif
 *.png
