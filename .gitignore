@@ -6,5 +6,6 @@ results/
 *.tif
 *.png
 *.csv
+*.xlsx
 *.pvsm
 *.mp4
