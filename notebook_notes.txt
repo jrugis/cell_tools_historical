@@ -61,11 +61,28 @@ Check:
   python3 --version
   pip3 --version
 
+******************************
+
+Install python packages
+-----------------------
+
+  pip3 install numpy scipy matplotlib
+  pip3 install scikit-image scikit-learn
+  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
+
 #######################################
 #######################################
 This section is for PC installation. 
 #######################################
 #######################################
+
+Install Visual Studio
+---------------------
+
+  Download and install: https://visualstudio.microsoft.com/downloads
+    Note: select workload "Desktop development with C++"
+
+******************************
 
 Install NodeJS
 --------------
@@ -101,25 +118,28 @@ Check:
 Install Python3
 ---------------
 
- https://www.python.org/downloads/windows
+ Download and execute installer: https://www.python.org/downloads/windows
 
 Check:
-  python3 --version
-  pip3 --version
+  python --version
+  pip --version
+
+******************************
+
+Install python packages
+-----------------------
+
+  pip install numpy scipy matplotlib 
+  pip install scikit-image scikit-learn
+  pip install jupyterlab ipywidgets ipyfilechooser ipympl
+
+******************************
 
 #######################################
 #######################################
 This section is for both MAC and PC.
 #######################################
 #######################################
-
-Install python packages
------------------------
-
-  pip3 install numpy scipy matplotlib scikit-image scikit-learn
-  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
-
-******************************
 
 Install JupyterLab extension
 ----------------------------
