@@ -84,6 +84,13 @@ Install Visual Studio
 
 ******************************
 
+Install git
+--------------
+
+  Download and execute installer: https://git-for-windows.github.io
+
+******************************
+
 Install NodeJS
 --------------
 
@@ -95,7 +102,7 @@ Check:
 
 ******************************
 
-Install ffmpeg
+Install ffmpeg - MAYBE NOT REQUIRED
 --------------
 
   Download and extract: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
@@ -129,7 +136,8 @@ Check:
 Install python packages
 -----------------------
 
-  pip install numpy scipy matplotlib 
+  pip install wheel
+  pip install numpy==1.19.3 scipy matplotlib
   pip install scikit-image scikit-learn
   pip install jupyterlab ipywidgets ipyfilechooser ipympl
 
