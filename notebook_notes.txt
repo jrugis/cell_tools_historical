@@ -139,13 +139,14 @@ Launch ANACONDA.NAVIGATOR
 
 ********************************************************
 
-Install JupyterLab extension
-----------------------------
+Install JupyterLab extension and ipyfilechooser
+-----------------------------------------------
 
 Launch Anaconda3 | Anaconda prompt
     jupyter lab build
     jupyter labextension install @jupyter-widgets/jupyterlab-manager
     jupyter nbextension enable --py widgetsnbextension
+	conda install -c conda-forge ipyfilechooser
 
 ********************************************************
 
