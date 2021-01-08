@@ -1,14 +1,8 @@
-**************************************************************
-**************************************************************
-Install prerequisites
-**************************************************************
-**************************************************************
-
-#######################################
-#######################################
-This section is for MAC installation.
-#######################################
-#######################################
+################################################################################
+################################################################################
+                 This section is for MAC (using Terminal commands).
+################################################################################
+################################################################################
 
 Install Xcode
 -------------
@@ -19,7 +13,7 @@ Check:
   xcode-select --version
   git --version
 
-******************************
+********************************************************
 
 Install HomeBrew
 ----------------
@@ -29,7 +23,7 @@ Install HomeBrew
 Check:
   brew --version
 
-******************************
+********************************************************
 
 Install NodeJS
 --------------
@@ -40,7 +34,7 @@ Check:
   node -v
   npm -v  
 
-******************************
+********************************************************
 
 Install ffmpeg
 --------------
@@ -50,7 +44,7 @@ Install ffmpeg
 Check:
   ffmpeg 
 
-******************************
+********************************************************
 
 Install Python3
 ---------------
@@ -61,7 +55,7 @@ Check:
   python3 --version
   pip3 --version
 
-******************************
+********************************************************
 
 Install python packages
 -----------------------
@@ -70,84 +64,7 @@ Install python packages
   pip3 install scikit-image scikit-learn
   pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
 
-#######################################
-#######################################
-This section is for PC installation. 
-#######################################
-#######################################
-
-Install Visual Studio
----------------------
-
-  Download and install: https://visualstudio.microsoft.com/downloads
-    Note: select workload "Desktop development with C++"
-
-******************************
-
-Install git
---------------
-
-  Download and execute installer: https://git-for-windows.github.io
-
-******************************
-
-Install NodeJS
---------------
-
-  Download and install: https://nodejs.org/en/download
-
-Check:
-  node -v
-  npm -v  
-
-******************************
-
-Install ffmpeg - MAYBE NOT REQUIRED
---------------
-
-  Download and extract: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
-  
-Check:
-  ffmpeg 
-
-******************************
-
-Install Fiji ImageJ
--------------------
-
-  Download and install: https://imagej.net/Fiji.html#Downloads
-  
-Check:
-  launch the Fiji application 
-
-******************************
-
-Install Python3
----------------
-
- Download and execute installer: https://www.python.org/downloads/windows
-
-Check:
-  python --version
-  pip --version
-
-******************************
-
-Install python packages
------------------------
-
-  pip install wheel
-  pip install numpy==1.19.3 scipy matplotlib
-  pip install scikit-image scikit-learn
-  pip install jupyterlab ipywidgets ipyfilechooser ipympl
-
-******************************
-
-#######################################
-#######################################
-This section is for both MAC and PC.
-#######################################
-#######################################
+********************************************************
 
 Install JupyterLab extension
 ----------------------------
@@ -159,38 +76,28 @@ Install JupyterLab extension
 Check:
   jupyter labextension list
 
-**************************************************************
-**************************************************************
-Install and run the project notebook
-**************************************************************
-**************************************************************
+********************************************************
 
-Download the plot_apical project
---------------------------------
+Install Fiji ImageJ
+-------------------
 
-Navigate to where you want the project to go, then...
-  git clone https://github.com/jrugis/plot_apical.git
+  Download and install: https://imagej.net/Fiji/Downloads
+  
+Check:
+  launch the Fiji application 
 
-Copy oir files to folder: plot_apical/IMAGING/image_stacks/ 
-
-
-Use Fiji to convert oir files to tif's
---------------------------------------
-
-  Within Fiji, run macro: plot_apical/IMAGING/image_stacks/oir2tif.ijm
-
+********************************************************
 
 Launch Notebook
 ---------------
  
-  jupyter lab
-    Navigate to and launch the notebook: apical_ROI_plots.ipynb
+jupyter-lab
+  Navigate to and launch the notebook: apical_ROI_plots.ipynb
 
-**************************************************************
-**************************************************************
+********************************************************
+
 Update project notebook to latest version
-**************************************************************
-**************************************************************
+-----------------------------------------
 
 Navigate into your plot_apical folder, then...
   git fetch origin
@@ -200,5 +107,96 @@ NOTE: This operation will leave your results folder intact, but
       will overwrite any changes that you made in your copy of 
       the notebook !!!!!! 
 
-**************************************************************
-**************************************************************
+
+################################################################################
+################################################################################
+                 This section is for PC.
+################################################################################
+################################################################################
+
+Install git
+-----------
+
+  Download and execute installer: https://git-scm.com/download/win
+    default editor: Nano
+    credential helper: none
+  
+********************************************************
+
+Install Anaconda
+----------------
+
+  Download and install: https://www.anaconda.com/products/individual
+      
+********************************************************
+
+Set Anaconda environments
+-------------------------
+
+Launch ANACONDA.NAVIGATOR
+  Environments | Not installed
+    install: ffmpeg, ipympl, nodejs 
+
+********************************************************
+
+Install JupyterLab extension
+----------------------------
+
+Launch Anaconda3 | Anaconda prompt
+    jupyter lab build
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager
+    jupyter nbextension enable --py widgetsnbextension
+
+********************************************************
+
+Install Fiji ImageJ
+-------------------
+
+  Download and install: https://imagej.net/Fiji/Downloads
+  
+Check:
+  launch the Fiji application 
+
+********************************************************
+
+Download the plot_apical project
+--------------------------------
+
+Launch Anaconda3 | Anaconda prompt
+  Navigate to where you want the project to go, then...
+    git clone https://github.com/jrugis/plot_apical.git
+
+********************************************************
+
+Use Fiji to convert oir files to tif's
+--------------------------------------
+
+Copy oir files to folder: plot_apical/IMAGING/image_stacks/ 
+
+  Within Fiji, run macro: plot_apical/IMAGING/image_stacks/oir2tif.ijm
+
+********************************************************
+
+Launch Notebook
+---------------
+ 
+Launch Anaconda3 | Anaconda prompt
+  jupyter-lab
+    Navigate to and launch the notebook: apical_ROI_plots.ipynb
+
+********************************************************
+
+Update project notebook to latest version
+-----------------------------------------
+
+Launch Anaconda3 | Anaconda prompt
+  Navigate into your plot_apical folder, then...
+    git fetch origin
+    git reset --hard origin/master
+  
+NOTE: This operation will leave your results folder intact, but
+      will overwrite any changes that you made in your copy of 
+      the notebook !!!!!! 
+
+********************************************************
+********************************************************
