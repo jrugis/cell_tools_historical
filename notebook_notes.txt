@@ -133,8 +133,7 @@ Install Anaconda
 Set Anaconda environments
 -------------------------
 
-Launch ANACONDA.NAVIGATOR
-  Environments | Not installed
+Anaconda Navigator | Environments | Not installed
     install: ffmpeg, ipympl, nodejs 
 
 ********************************************************
@@ -142,11 +141,10 @@ Launch ANACONDA.NAVIGATOR
 Install JupyterLab extension and ipyfilechooser
 -----------------------------------------------
 
-Launch Anaconda3 | Anaconda prompt
+Anaconda Navigator | Home | CMD.exe Prompt
     jupyter lab build
-    jupyter labextension install @jupyter-widgets/jupyterlab-manager
-    jupyter nbextension enable --py widgetsnbextension
-	conda install -c conda-forge ipyfilechooser
+	pip install ipywidgets
+	pip install ipyfilechooser
 
 ********************************************************
 
@@ -163,7 +161,7 @@ Check:
 Download the plot_apical project
 --------------------------------
 
-Launch Anaconda3 | Anaconda prompt
+Anaconda Navigator | Home | CMD.exe Prompt
   Navigate to where you want the project to go, then...
     git clone https://github.com/jrugis/plot_apical.git
 
@@ -181,7 +179,7 @@ Copy oir files to folder: plot_apical/IMAGING/image_stacks/
 Launch Notebook
 ---------------
  
-Launch Anaconda3 | Anaconda prompt
+Anaconda Navigator | Home | CMD.exe Prompt
   jupyter-lab
     Navigate to and launch the notebook: apical_ROI_plots.ipynb
 
@@ -190,7 +188,7 @@ Launch Anaconda3 | Anaconda prompt
 Update project notebook to latest version
 -----------------------------------------
 
-Launch Anaconda3 | Anaconda prompt
+Anaconda Navigator | Home | CMD.exe Prompt
   Navigate into your plot_apical folder, then...
     git fetch origin
     git reset --hard origin/master
