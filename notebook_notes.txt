@@ -88,18 +88,34 @@ Check:
 
 ********************************************************
 
+Download the cell_tools project from github
+-------------------------------------------
+
+  git clone https://github.com/jrugis/cell_tools.git
+
+********************************************************
+
+Use Fiji to convert oir files to tif's
+--------------------------------------
+
+Copy oir files to folder: cell_tools/IMAGING/image_stacks/ 
+
+  Within Fiji, run macro: cell_tools/IMAGING/image_stacks/oir2tif.ijm
+
+********************************************************
+
 Launch Notebook
 ---------------
  
-jupyter-lab
-  Navigate to and launch the notebook: apical_ROI_plots.ipynb
+  jupyter-lab
+    Navigate to and launch the notebook: roi_identification.ipynb
 
 ********************************************************
 
 Update project notebook to latest version
 -----------------------------------------
 
-Navigate into your plot_apical folder, then...
+Navigate into your cell_tools folder, then...
   git fetch origin
   git reset --hard origin/master
   
@@ -138,14 +154,27 @@ Anaconda Navigator | Environments | Not installed
 
 ********************************************************
 
-Install JupyterLab extension and ipyfilechooser
------------------------------------------------
+Install python packages
+-----------------------
 
-Anaconda Navigator | Home | CMD.exe Prompt
-    jupyter lab build
+  Anaconda Navigator | Home | CMD.exe Prompt
 	pip install ipywidgets
 	pip install ipyfilechooser
 
+********************************************************
+
+Install JupyterLab extension
+----------------------------
+
+  Anaconda Navigator | Home | CMD.exe Prompt
+    jupyter lab build
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager
+    jupyter labextension install jupyter-matplotlib
+    jupyter nbextension enable --py widgetsnbextension 
+
+Check:
+  jupyter labextension list
+	
 ********************************************************
 
 Install Fiji ImageJ
@@ -158,21 +187,21 @@ Check:
 
 ********************************************************
 
-Download the plot_apical project
---------------------------------
+Download the cell_tools project from github
+-------------------------------------------
 
-Anaconda Navigator | Home | CMD.exe Prompt
-  Navigate to where you want the project to go, then...
-    git clone https://github.com/jrugis/plot_apical.git
+  Anaconda Navigator | Home | CMD.exe Prompt
+    Navigate to where you want the project to go, then...
+      git clone https://github.com/jrugis/cell_tools.git
 
 ********************************************************
 
 Use Fiji to convert oir files to tif's
 --------------------------------------
 
-Copy oir files to folder: plot_apical/IMAGING/image_stacks/ 
+Copy oir files to folder: cell_tools/IMAGING/image_stacks/ 
 
-  Within Fiji, run macro: plot_apical/IMAGING/image_stacks/oir2tif.ijm
+  Within Fiji, run macro: cell_tools/IMAGING/image_stacks/oir2tif.ijm
 
 ********************************************************
 
@@ -181,7 +210,7 @@ Launch Notebook
  
 Anaconda Navigator | Home | CMD.exe Prompt
   jupyter-lab
-    Navigate to and launch the notebook: apical_ROI_plots.ipynb
+    Navigate to and launch the notebook: roi_identification.ipynb
 
 ********************************************************
 
@@ -189,7 +218,7 @@ Update project notebook to latest version
 -----------------------------------------
 
 Anaconda Navigator | Home | CMD.exe Prompt
-  Navigate into your plot_apical folder, then...
+  Navigate into your cell_tools folder, then...
     git fetch origin
     git reset --hard origin/master
   
