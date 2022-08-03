@@ -1,0 +1,50 @@
+Trypsin Experiment Instructions
+
+1. Open JupyterLab and place Trypsin Experiment folder(s) into image_stacks
+2. Open Final_Fura_ROI_Detection_Automated in JupyterLab
+3. Run the first code block using the play button next to the clipboard icon
+4. Run the next code block
+5. Use the "FPS of tif files:" widget to select the fps of the tif files used
+6. Run the next code block, wait until "Done." appears
+7. Run the next code block, wait until image(s) appear
+8. Select an option from "Threshold Size for:" widget, "Small" recommended
+9. Run the next code block, wait until image(s) and widgets appear
+10. Select option from "Number of erosions" widget for experiment(s), "0" recommended
+11. Select option from "Max size of ROIs" widget for experiment(s), "6000" recommended
+12. Select option from "Min size of ROIs" widget for experiment(s), "200" recommended
+13. Un-check or leave checked the "Un-Check this box to discard edge ROIS" widget, checked recommended
+14. Run the next code block, wait until image(s) appear
+15. Run the next code block, wait until "Done." appears
+16. Run the next code block, wait until image(s) and widgets appear
+17. Select ROIs for Removal from "ROIs for Removal" widget(s), or check "Reset to original mask" to reset
+18. Run the next code block, wait until "Done. Re-Run Previous Code Block to View Updated ROIs" appears
+19. Run the next code block, wait until "Done." appears
+20. Run the next code block, wait until "Done." appears
+21. If desired (Optional) Run the next code block, wait until "Done." appears
+23. Open Final_CSV_Peaks_Automated in JupyterLab
+24. Run the first code block
+25. Run the next code block, wait until "Done." appears
+26. Run the next code block, wait until "Data Files" widget appears
+27. Select result(s) folder(s) from Data Files widget, Ctrl-Click to select more than one
+28. Run the next code block, wait until "Region cols" widget(s) appear
+29. Select Region Columns for analysis from "Region cols" widget(s), all selected recommended
+30. Un-check or leave checked the "Includes an Avg Col" widget(s), in this case leave checked
+31. Check the "Check this box to make stimulation zones the same for all files" widget
+32. Check the "Check this box to automatically remove bad traces" widget
+33. Run the next code block, wait until plot(s) appear
+34. Select option from "Number of anomalies present in..." widget(s) according to need
+35. Select option from "Number of stimulation time zones for all plots:" widget according to need
+36. If no anomalies present, run next three code blocks, else run code blocks one at a time
+37. Run the next code block, wait until plot(s) appear
+38. Select range of stimulation zones using "Stimulation zone" sliding range widget
+39. Run the next code block, wait until plot(s) appear
+40. Check the "Check this box to have automatic baselines for all" widget
+41. Check the "Check this box to have starting baseline for all" widget
+42. Run the next code block, wait until plot(s) and widgets appear
+43. Select option for "Peak counting sensitivity" widget, "medium" recommended
+44. Select option for "Slope calculation method" widget
+45. Select option for "Threshold standard deviations" widget, "2" recommended
+46. Select option for "Response % standard deviations" widget, "4" recommended
+47. Select options for "Length of Automatic Baselines" and "Length of Starting Baseline" widgets
+48. Run next code block, wait until plots stop being output and it says "Idle" at bottom of window
+49. View results in results folder
