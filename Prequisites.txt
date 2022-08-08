@@ -1,0 +1,105 @@
+###################################################################################################
+###################################################################################################
+
+Your computer will need to be setup with a number of prerequisite software tools, namely:
+
+- Xcode (MAC only)
+- NodeJS
+- ffmpeg
+- Python3 - with packages:
+    numpy, scipy, matplotlib, scikit-image, scikit-learn,
+    jupyterlab, ipywidgets, ipyfilechooser, ipympl, opencv-python
+- JupyterLab extensions:
+    @jupyter-widgets/jupyterlab-manager
+    jupyter-matplotlib
+- JupyterLab widgetsnbextension enabled
+
+
+It doesn't really matter how you do this setup.
+
+But, for example, it can be accomplished on a MAC using terminal commands as follows.
+
+###################################################################################################
+###################################################################################################
+
+Install Xcode
+-------------
+
+  xcode-select --install
+
+Check:
+  xcode-select --version
+
+********************************************************
+
+Install HomeBrew
+----------------
+
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+Check:
+  brew --version
+
+********************************************************
+
+Install NodeJS
+--------------
+
+  brew install node
+  
+Check:
+  node -v
+  npm -v  
+
+********************************************************
+
+Install ffmpeg
+--------------
+
+  brew install ffmpeg
+  
+Check:
+  ffmpeg 
+
+********************************************************
+
+Install Python3
+---------------
+
+ brew install python3
+
+Check:
+  python3 --version
+  pip3 --version
+
+********************************************************
+
+Install python packages
+-----------------------
+
+  pip3 install numpy scipy matplotlib
+  pip3 install scikit-image scikit-learn
+  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
+  Pip3 install opencv-python
+
+********************************************************
+
+Install JupyterLab extension
+----------------------------
+
+  jupyter labextension install @jupyter-widgets/jupyterlab-manager
+  jupyter labextension install jupyter-matplotlib
+  jupyter nbextension enable --py widgetsnbextension 
+
+Check:
+  jupyter labextension list
+
+********************************************************
+
+Launch Notebook
+---------------
+ 
+  jupyter-lab
+    Navigate to and launch the notebook: roi_identification.ipynb
+
+********************************************************

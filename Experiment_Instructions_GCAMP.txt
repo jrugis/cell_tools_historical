@@ -1,0 +1,73 @@
+Experiment Instructions - GCAMP Dataset
+=======================================
+
+Part 1 - ROI Identification
+------------------------------------------------
+1. Open the roi_identification notebook in JupyterLab
+2. Run the "Initialize" code block.
+3. Run the "Select image stack file(s)" code block.
+   Select all four of the "Mistgcamp-3" files.
+4. Run the "Enter short descriptive image stack labels" code block.
+   Type in the four labels "1Hz", "2Hz", "5Hz", "10Hz".
+5. Run the "Set display and calculation parameters" code block.
+   Set the "Image stack for ROI creation" to "5Hz".
+   Set the "Calculation method" to "std".
+6. Run the "Create a new time-stamped results directory" code block.
+7. Run the "Get the image stack for ROI creation" code block.
+8. Run the "Unstimulated average (or standard deviation) over time" code block.
+   Plots will appear.
+9. Run the "Stimulated average (or standard deviation) over time" code block.
+   Plots will appear.
+10. Run the "Stimulated minus unstimulated average (or standard deviation) over time" code block.
+    Plots will appear.
+11. Run the "Create region-of-interest mask" code block.
+    Plots will appear.
+12. Optionally run the "FOR REFERENCE: Annotate the ROI mask regions by number" code block.
+    A plot will appear.
+13. Optionally run the "DIAGNOSTIC: Plot ROI responses for the same stimulation frequency used to generate the mask" code block.
+    A number of plots will appear.
+14. Run the "RESULTS: Plot responses for all stimulation frequencies and regions using the mask from above" code block.
+    After a few seconds, a number of plots will appear.
+
+Part 2 - Post-Processing: Peak Detection
+------------------------------------------------
+1. Open the post_processing_peaks notebook in JupyterLab
+2. Run the "Initialize" code block.
+3. Run the "Select a results directory and peak counting options" code block.
+   Select the most current GCAMP results directory.
+4. Run the "Peak counting over all regions" code block.
+   Plots will appear.
+
+Part 3 - Post-Processing: Frequency Analysis
+------------------------------------------------
+1. Open the post_processing_frequency notebook in JupyterLab
+2. Run the "Initialize" code block.
+3. Run the "Select a results directory and set analysis frame range" code block.
+   Select the most current GCAMP results directory.
+5. Run the "Frequency analysis of results over all regions" code block.
+   A number of plots will appear.
+6. Re-run the "Select a results directory and set analysis frame range" code block.
+   Select the most current GCAMP results directory.
+   Set the "Calculation method" to "FFT".
+7. Re-run the "Frequency analysis of results over all regions" code block.
+   A number of plots will appear.
+
+Part 4 - Post-Processing: Movie Making
+------------------------------------------------
+1. Open the post_processing_movie notebook in JupyterLab
+2. Run the "Initialize" code block.
+3. Run the "Select an image stack, a results directory and one or more regions" code block.
+   Select the image stack "Mistgcamp-3_0002.tif".
+   Select the most current GCAMP results directory.
+   Select regions "region_01-mask5Hz-stimALL", "region_02-mask5Hz-stimALL", 
+                  "region_03-mask5Hz-stimALL", "region_04-mask5Hz-stimALL",
+                  "region_05-mask5Hz-stimALL", "region_06-mask5Hz-stimALL",
+                  "region_07-mask5Hz-stimALL", "region_08-mask5Hz-stimALL",
+                  "region_09-mask5Hz-stimALL", "region_10-mask5Hz-stimALL"
+4. Run the "Select movie options" code block.
+5. Run the "Generate the movie file" code block.
+   Wait until the "Processing frame" count says "Done."
+   The movie file "apical.mp4" can be found in the time-stamped results directory.
+
+
+Note that a saved copy of all plots and computed results can also be found in the time-stamped folder in the results directory.

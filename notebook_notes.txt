@@ -63,6 +63,7 @@ Install python packages
   pip3 install numpy scipy matplotlib
   pip3 install scikit-image scikit-learn
   pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
+  Pip3 install opencv-python
 
 ********************************************************
 
