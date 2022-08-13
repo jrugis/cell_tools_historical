@@ -44,12 +44,12 @@ Part 3 - Post-Processing: Frequency Analysis
 2. Run the "Initialize" code block.
 3. Run the "Select a results directory and set analysis frame range" code block.
    Select the most current GCAMP results directory.
-5. Run the "Frequency analysis of results over all regions" code block.
+4. Run the "Frequency analysis of results over all regions" code block.
    A number of plots will appear.
-6. Re-run the "Select a results directory and set analysis frame range" code block.
+5. Re-run the "Select a results directory and set analysis frame range" code block.
    Select the most current GCAMP results directory.
    Set the "Calculation method" to "FFT".
-7. Re-run the "Frequency analysis of results over all regions" code block.
+6. Re-run the "Frequency analysis of results over all regions" code block.
    A number of plots will appear.
 
 Part 4 - Post-Processing: Movie Making
@@ -69,5 +69,3 @@ Part 4 - Post-Processing: Movie Making
    Wait until the "Processing frame" count says "Done."
    The movie file "apical.mp4" can be found in the time-stamped results directory.
 
-
-Note that a saved copy of all plots and computed results can also be found in the time-stamped folder in the results directory.
