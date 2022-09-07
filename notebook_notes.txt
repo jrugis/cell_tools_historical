@@ -3,6 +3,13 @@
                  This section is for MAC (using Terminal commands).
 ################################################################################
 ################################################################################
+NOTE: If using a newer MAC running macOS Catalina operating system additional 
+	 installation steps are required.
+
+Additional macOS Catalina instructions
+--------------------------------------
+  Navigate to System Preferences > Security and Privacy > Privacy
+  Then add Terminal to list of apps with full disk access
 
 Install Xcode
 -------------
@@ -63,7 +70,7 @@ Install python packages
   pip3 install numpy scipy matplotlib
   pip3 install scikit-image scikit-learn
   pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
-  Pip3 install opencv-python
+  pip3 install opencv-python
 
 ********************************************************
 
@@ -161,6 +168,7 @@ Install python packages
   Anaconda Navigator | Home | CMD.exe Prompt
 	pip install ipywidgets
 	pip install ipyfilechooser
+	pip install opencv-python
 
 ********************************************************
 

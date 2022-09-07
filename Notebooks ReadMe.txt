@@ -108,11 +108,11 @@ drawing on TILLvision, it is important to have the same folder layout as the out
 the "results" folder should be a named folder containing the excel file starting with the same name and ending with "_TOTAL-stimALL.csv".
 
 Processing:
-The CSV notebooks begin by creating a "Analysis_Results" folder within each results folder within "results". The notebooks will send all outputs to this 
-folder, in order to allow easy distinction between the outputs of these notebooks and the outputs of the Fura_ROI_Detection_Automated notebook. The notebooks 
-then prompt the user to select which files within the "results" folder that the user would like to have analyzed. Once these selections have been made, the 
-notebooks prompt the user to select which ROIs should be included in the analysis for each file, along with displaying a checkbox for if the excel file 
-contains an average column. The notebooks default to having all ROIs selected and the checkbox checked, as this is the most common selection for when the 
+The notebooks begin by prompting the user to select which files within the "results" folder that the user would like to have analyzed. The CSV notebooks then 
+create a "Analysis_Results" folder within each results folder within "results" for the selected files. The notebooks will send all outputs to this folder, in 
+order to allow easy distinction between the outputs of these notebooks and the outputs of the Fura_ROI_Detection_Automated notebook. Once these selections have 
+been made, the notebooks prompt the user to select which ROIs should be included in the analysis for each file, along with displaying a checkbox for if the excel 
+file contains an average column. The notebooks default to having all ROIs selected and the checkbox checked, as this is the most common selection for when the 
 input excel files have been outputted by the Fura_ROI_Detection_Automated notebook. If the user wishes to use excel files generated from manually drawn ROIs, 
 the "Includes an Avg Col" checkbox should be unchecked as these excel files will not contain an average column. Along with these prompts the notebooks will 
 also display two checkboxes, the first of which allows the user to choose whether to have the stimulation zones the same for all files during the analysis. 
