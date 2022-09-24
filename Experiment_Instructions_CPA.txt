@@ -1,57 +1,41 @@
 Experiment Instructions - CPA Dataset
-=========================================
+=====================================
 
 Part 1 - ROI Identification
 --------------------------------------------------
-1. Open JupyterLab and place CCH Experiment folder(s) into image_stacks
-2. Open Final_Fura_ROI_Detection_Automated in JupyterLab
-3. Run the "Package Import" code block using the play button next to the clipboard icon
-4. Run the "File Import" code block
-   Use the "FPS of tif files:" widget to select the fps of the tif files used
-5. Run the "Create Results Folder(s)" code block, wait until "Done." appears
-6. Run the "Threshold Sizing Baseline Image(s)" code block, wait until image(s) appear
-   Select an option from "Threshold Size for:" widget, "Small" recommended
-7. Run the "Initial Mask Creation" code block, wait until image(s) and widgets appear
-   Select option from "Number of erosions" widget for experiment(s), "0" recommended
-   Select option from "Max size of ROIs" widget for experiment(s), "6000" recommended
-   Select option from "Min size of ROIs" widget for experiment(s), "200" recommended
-   Un-check or leave checked the "Un-Check this box to discard edge ROIS" widget, checked recommended
-8. Run the "Segmentation" code block, wait until image(s) appear
-9. Run the "Create Removal Mask(s)" code block, wait until "Done." appears
-10. Run the "Display Removal Mask(s)" code block, wait until image(s) and widgets appear
-    Select ROIs for Removal from "ROIs for Removal" widget(s), or check "Reset to original mask" to reset
-11. Run the "Submit Removal Selection(s)" code block, wait until "Done." appears
-    Re-Run Previous Code Block to View Updated ROIs
-11. Run the "Finalize Mask(s)" code block, wait until "Done." appears
-12. Run the "Plotting and Data Collection" code block, wait until "Done." appears
-13. If desired (Optional) Run the "Optional plotting of individual pixel intensities of each ROI and average" code block, wait until "Done." appears
+1. Open JupyterLab, clear the image stacks directory and copy the folder "CPA Experiment 1" into image_stacks.
+2. Open Final_Fura_ROI_Detection_Automated in JupyterLab.
+3. Run the "Package Import" code block using the play button next to the clipboard icon.
+4. Run the "File Import" code block.
+5. Run the "Create Results Folder(s)" code block, wait until "Done." appears.
+6. Run the "Threshold Sizing Baseline Image(s)" code block, wait until image(s) appear.
+7. Run the "Initial Mask Creation" code block, wait until image(s) and widgets appear.
+8. Run the "Segmentation" code block, wait until image(s) appear.
+9. Run the "Create Removal Mask(s)" code block, wait until "Done." appears.
+10. Run the "Display Removal Mask(s)" code block, wait until image(s) and widgets appear.
+11. Run the "Submit Removal Selection(s)" code block, wait until "Done." appears.
+12. Run the "Finalize Mask(s)" code block, wait until "Done." appears.
+13. Run the "Plotting and Data Collection" code block, wait until "Done." appears.
+14. If desired (optional), run the "Optional plotting of individual pixel intensities of each ROI and average" code block, wait until "Done." appears.
 
 Part 2 - CPA CSV Analysis
 --------------------------------------------------
-1. Open Final_CPA_CSV_Automated in JupyterLab
-2. Run the "Package Import" code block
-3. Run the "Select data files for analysis" code block, wait until "Data Files" widget appears
-   Select result(s) folder(s) from Data Files widget, Ctrl-Click to select more than one
-4. Run the "Create a new time-stamped results directory" code block, wait until "Done." appears
-5. Run the "Choose which region columns to analyze" code block, wait until "Region cols" widget(s) appear
-   Select Region Columns for analysis from "Region cols" widget(s), all selected recommended
-   Un-check or leave checked the "Includes an Avg Col" widget(s), in this case leave checked
-   Check the "Check this box to make stimulation zones the same for all files" widget
-   Check the "Check this box to automatically remove bad traces" widget
-6. Run the "Initial Data Plotting" code block, wait until plot(s) appear
-   Select option from "Number of anomalies present in..." widget(s) according to need
-   Select option from "Number of stimulation time zones for all plots:" widget according to need
-7. If no anomalies present, run next three "Anomaly Artifact Removal" code blocks
-   Otherwise run code blocks one "Part" at a time
-8. Run the "Set stimulation time zone ranges" code block, wait until plot(s) appear
-   Select range of stimulation zones using "Stimulation zone" sliding range widget
-9. Run the "Plot data and stimulation time zones" code block, wait until plot(s) appear
-   Check the "Check this box to have automatic baselines for all" widget
-   Check the "Check this box to have starting baseline for all" widget
-10. Run the "Calculation settings" code block, wait until plot(s) and widgets appear
-    Select option for "Slope calculation method" widget
-    Select option for "Threshold standard deviations" widget, "2" recommended
-    Select option for "Response % standard deviations" widget, "4" recommended
-    Select options for "Length of Automatic Baselines" and "Length of Starting Baseline" widgets
-11. Run "Plot analysis by region" code block, wait until plots stop being output and it says "Idle" at bottom of window
-12. View results in results folder
+1. Open Final_CPA_CSV_Automated in JupyterLab.
+2. Run the "Package Import" code block.
+3. Run the "Select data files for analysis" code block, wait until "Data Files" widget appears.
+   Select the "CPA Experiment 1" results folder from Data Files widget.
+4. Run the "Create a new analysis results directory" code block, wait until "Done." appears.
+5. Run the "Choose which region columns to analyze" code block, wait until "Region cols" widget(s) appear.
+6. Run the "Initial Data Plotting" code block, wait until plot(s) appear.
+   Set "Number of stimulation time zones for all plots:" to 2.
+7. Skip over the three "Anomaly/Artifact Removal" code blocks.
+8. Run the "Set stimulation time zone ranges" code block, wait until plot(s) appear.
+   Select range of stimulation zones using "Stimulation zone" sliding range widget.
+   Set the zone ranges to 200-800, and 900-1074.
+9. Run the "Plot data and stimulation time zones" code block, wait until plot(s) appear.
+   Check the "Check this box to have automatic baselines for all" widget.
+   Check the "Check this box to have starting baseline for all" widget.
+10. Run the "Calculation settings" code block, wait until plot(s) and widgets appear.
+    Set the "Slope calculation method" to "polynomial fit".
+11. Run "Plot analysis by region" code block, wait until plots stop being output and it says "Idle" at bottom of window.
+12. View results in results folder.

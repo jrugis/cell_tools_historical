@@ -3,30 +3,31 @@ Experiment Instructions - GCAMP Dataset
 
 Part 1 - ROI Identification
 ------------------------------------------------
-1. Open the roi_identification notebook in JupyterLab
-2. Run the "Initialize" code block.
-3. Run the "Select image stack file(s)" code block.
+1. Open JupyterLab and copy gCamp data files into cell_tools/IMAGING/image_stacks.
+2. Open the roi_identification notebook in JupyterLab
+3. Run the "Initialize" code block.
+4. Run the "Select image stack file(s)" code block.
    Select all four of the "Mistgcamp-3" files.
-4. Run the "Enter short descriptive image stack labels" code block.
+5. Run the "Enter short descriptive image stack labels" code block.
    Type in the four labels "1Hz", "2Hz", "5Hz", "10Hz".
-5. Run the "Set display and calculation parameters" code block.
+6. Run the "Set display and calculation parameters" code block.
    Set the "Image stack for ROI creation" to "5Hz".
    Set the "Calculation method" to "std".
-6. Run the "Create a new time-stamped results directory" code block.
-7. Run the "Get the image stack for ROI creation" code block.
-8. Run the "Unstimulated average (or standard deviation) over time" code block.
+7. Run the "Create a new time-stamped results directory" code block.
+8. Run the "Get the image stack for ROI creation" code block.
+9. Run the "Unstimulated average (or standard deviation) over time" code block.
    Plots will appear.
-9. Run the "Stimulated average (or standard deviation) over time" code block.
+10. Run the "Stimulated average (or standard deviation) over time" code block.
    Plots will appear.
-10. Run the "Stimulated minus unstimulated average (or standard deviation) over time" code block.
+11. Run the "Stimulated minus unstimulated average (or standard deviation) over time" code block.
     Plots will appear.
-11. Run the "Create region-of-interest mask" code block.
+12. Run the "Create region-of-interest mask" code block.
     Plots will appear.
-12. Optionally run the "FOR REFERENCE: Annotate the ROI mask regions by number" code block.
+13. Optionally run the "FOR REFERENCE: Annotate the ROI mask regions by number" code block.
     A plot will appear.
-13. Optionally run the "DIAGNOSTIC: Plot ROI responses for the same stimulation frequency used to generate the mask" code block.
+14. Optionally run the "DIAGNOSTIC: Plot ROI responses for the same stimulation frequency used to generate the mask" code block.
     A number of plots will appear.
-14. Run the "RESULTS: Plot responses for all stimulation frequencies and regions using the mask from above" code block.
+15. Run the "RESULTS: Plot responses for all stimulation frequencies and regions using the mask from above" code block.
     After a few seconds, a number of plots will appear.
 
 Part 2 - Post-Processing: Peak Detection
