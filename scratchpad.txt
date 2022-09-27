@@ -63,4 +63,23 @@ The benefit of stabilization preproccessing can be explored by reusing the roi_i
    
    
 
+********************************************************
 
+Install Fiji ImageJ
+-------------------
+
+  Download and install: https://imagej.net/Fiji/Downloads
+  
+Check:
+  launch the Fiji application 
+
+********************************************************
+
+Use Fiji to convert oir files to tif's
+--------------------------------------
+
+Copy oir files to folder: cell_tools/IMAGING/image_stacks/ 
+
+  Within Fiji, run macro: cell_tools/IMAGING/image_stacks/oir2tif.ijm
+
+********************************************************

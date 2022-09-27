@@ -182,6 +182,3 @@ three notebooks, and still contains the peak value of the maximum peak with the 
 Final_GSK_CSV_AUtomated's total data by zone csv files also includes a column containing the difference between the starting and unstimulated baseline 
 values, if inclusion of a starting baseline was selected by the user.
 
-
-## Can also include analysis section specific to each notebook discussing the process used to analyze the files in more detail, not nessecarily
-required for an "Instruction Manual" though.

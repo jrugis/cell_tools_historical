@@ -1,15 +1,37 @@
-################################################################################
-################################################################################
-                 This section is for MAC (using Terminal commands).
-################################################################################
-################################################################################
-NOTE: If using a newer MAC running macOS Catalina operating system additional 
-	 installation steps are required.
+###################################################################################################
+###################################################################################################
+
+Your computer will need to be setup with a number of prerequisite software tools, namely:
+
+- Xcode (MAC only)
+- NodeJS
+- ffmpeg
+- Python3 - with packages:
+    numpy, scipy, matplotlib, scikit-image, scikit-learn,
+    jupyterlab, ipywidgets, ipyfilechooser, ipympl, opencv-python
+- JupyterLab extensions:
+    @jupyter-widgets/jupyterlab-manager
+    jupyter-matplotlib
+- JupyterLab widgetsnbextension enabled
+
+
+Examples of ways to install the prerequisites and run the notebooks follow.
+  
+
+##################################################################
+##################################################################
+This section is for MAC (using Terminal commands).
+##################################################################
+##################################################################
+
+NOTE: If using a newer MAC running macOS Catalina operating system additional installation steps are required.
 
 Additional macOS Catalina instructions
 --------------------------------------
   Navigate to System Preferences > Security and Privacy > Privacy
   Then add Terminal to list of apps with full disk access
+
+********************************************************
 
 Install Xcode
 -------------
@@ -70,7 +92,7 @@ Install python packages
   pip3 install numpy scipy matplotlib
   pip3 install scikit-image scikit-learn
   pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
-  pip3 install opencv-python
+  Pip3 install opencv-python
 
 ********************************************************
 
@@ -84,31 +106,6 @@ Install JupyterLab extension
 Check:
   jupyter labextension list
 
-********************************************************
-
-Install Fiji ImageJ
--------------------
-
-  Download and install: https://imagej.net/Fiji/Downloads
-  
-Check:
-  launch the Fiji application 
-
-********************************************************
-
-Download the cell_tools project from github
--------------------------------------------
-
-  git clone https://github.com/jrugis/cell_tools.git
-
-********************************************************
-
-Use Fiji to convert oir files to tif's
---------------------------------------
-
-Copy oir files to folder: cell_tools/IMAGING/image_stacks/ 
-
-  Within Fiji, run macro: cell_tools/IMAGING/image_stacks/oir2tif.ijm
 
 ********************************************************
 
@@ -116,12 +113,13 @@ Launch Notebook
 ---------------
  
   jupyter-lab
-    Navigate to and launch the notebook: roi_identification.ipynb
+    Navigate to and launch a notebook.
 
 ********************************************************
 
-Update project notebook to latest version
------------------------------------------
+
+To update notebooks to a subsequent newer version
+-------------------------------------------------
 
 Navigate into your cell_tools folder, then...
   git fetch origin
@@ -186,31 +184,12 @@ Check:
 	
 ********************************************************
 
-Install Fiji ImageJ
--------------------
-
-  Download and install: https://imagej.net/Fiji/Downloads
-  
-Check:
-  launch the Fiji application 
-
-********************************************************
-
 Download the cell_tools project from github
 -------------------------------------------
 
   Anaconda Navigator | Home | CMD.exe Prompt
     Navigate to where you want the project to go, then...
       git clone https://github.com/jrugis/cell_tools.git
-
-********************************************************
-
-Use Fiji to convert oir files to tif's
---------------------------------------
-
-Copy oir files to folder: cell_tools/IMAGING/image_stacks/ 
-
-  Within Fiji, run macro: cell_tools/IMAGING/image_stacks/oir2tif.ijm
 
 ********************************************************
 
@@ -223,8 +202,8 @@ Anaconda Navigator | Home | CMD.exe Prompt
 
 ********************************************************
 
-Update project notebook to latest version
------------------------------------------
+To update notebooks to a subsequent newer version
+-------------------------------------------------
 
 Anaconda Navigator | Home | CMD.exe Prompt
   Navigate into your cell_tools folder, then...
