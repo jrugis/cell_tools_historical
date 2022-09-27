@@ -1,9 +1,20 @@
 Experiment Instructions - CPA Dataset
 =====================================
 
+Download CPA data folders from the following links.
+NOTE: The link names are quite long, each beginning with "https". 
+
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EpFM14AvbIlBpaouEpMoUBgB4mQs-WTbFgy7hF8m4CGteQ
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/Em9tHZm8EMhBh8tBoboEgREBfNzx74iI3cn_hliO4sYq-w
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EhKigESg6zFNiyZ4AuFdYYMBJ1Vw_2K3Qd79bWHvaj4JQg
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EskTR7eAptFLs2GXgOFhV0oB-FJYMzK6JJCVbj6veWlaeg
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EvmsP4y74T9Hr4_FmkhVmPoB6r2PmBEabWOLaewkcYyoMA
+
+
+
 Part 1 - ROI Identification
 --------------------------------------------------
-1. Open JupyterLab, clear the image stacks directory and copy the folder "CPA Experiment 1" into image_stacks.
+1. Open JupyterLab, clear the image stacks directory and copy the CPA Experiment folders into image_stacks.
 2. Open Final_Fura_ROI_Detection_Automated in JupyterLab.
 3. Run the "Package Import" code block using the play button next to the clipboard icon.
 4. Run the "File Import" code block.
@@ -23,9 +34,10 @@ Part 2 - CPA CSV Analysis
 1. Open Final_CPA_CSV_Automated in JupyterLab.
 2. Run the "Package Import" code block.
 3. Run the "Select data files for analysis" code block, wait until "Data Files" widget appears.
-   Select the "CPA Experiment 1" results folder from Data Files widget.
+   Select the CPA Experiment result folders from Data Files widget.
 4. Run the "Create a new analysis results directory" code block, wait until "Done." appears.
 5. Run the "Choose which region columns to analyze" code block, wait until "Region cols" widget(s) appear.
+   Check the "Check this box to make stimulation zones are same for all files" box.
 6. Run the "Initial Data Plotting" code block, wait until plot(s) appear.
    Set "Number of stimulation time zones for all plots:" to 2.
 7. Skip over the three "Anomaly/Artifact Removal" code blocks.
@@ -38,4 +50,4 @@ Part 2 - CPA CSV Analysis
 10. Run the "Calculation settings" code block, wait until plot(s) and widgets appear.
     Set the "Slope calculation method" to "polynomial fit".
 11. Run "Plot analysis by region" code block, wait until plots stop being output and it says "Idle" at bottom of window.
-12. View results in results folder.
+12. View results in the results folder.

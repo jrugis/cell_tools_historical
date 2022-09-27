@@ -1,9 +1,20 @@
 Experiment Instructions - CCH Dataset
 =====================================
 
+Download CCH data folders from the following links.
+NOTE: The link names are quite long, each beginning with "https". 
+
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EokCOWxp4_xFlpiL0mqUkwUBB-AmAFYyWUp9cMbXv-gOQA
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EtaaReQc-RVClPbD_880TUcBGCvdeZvY0FHSmLLJEDBIvQ
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EiN6KfbZBDNFokygjoZIyNQB-gLUJ77MDkYjzvpSE0JaJQ
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EtJq-BUMntlHqovySZVvAGABf-kqZ0VIEgd8L1MsdidySg
+https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EgRP02nVSSZBghd8cWuNYeQBS-SdoIibtambryf7FMPskw
+
+
+
 Part 1 - ROI Identification
 --------------------------------------------------
-1. Open JupyterLab, clear the image stacks directory and copy the folder "CCH Experiment 5" into image_stacks.
+1. Open JupyterLab, clear the image stacks directory and copy the CCH Experiment folders into image_stacks.
 2. Open Final_Fura_ROI_Detection_Automated in JupyterLab.
 3. Run the "Package Import" code block using the play button next to the clipboard icon.
 4. Run the "File Import" code block.
@@ -38,4 +49,4 @@ Part 2 - CSV Peaks Analysis
 10. Run the "Peak counting and latency calculation settings" code block, wait until plot(s) and widgets appear.
     Set the "Slope calculation method" to "gaussian fit".
 11. Run "Plot peaks and calculate latencies by region" code block, wait until plots stop being output and it says "Idle" at bottom of window.
-12. View results in results folder.
+12. View results in the results folder.

@@ -1,9 +1,19 @@
 Experiment Instructions - GCAMP Dataset
 =======================================
 
+Download GCAMP data files from the following links.
+NOTE: The link names are quite long, each beginning with "https". 
+
+https://uoa-my.sharepoint.com/:i:/g/personal/jrug001_uoa_auckland_ac_nz/EUcWoV-U47xGjevsb7GHsecB0CzShI0q5t7XDmomaUg6sA
+https://uoa-my.sharepoint.com/:i:/g/personal/jrug001_uoa_auckland_ac_nz/EQoAvttjkiJMgtqSRq8UufMBWoEQC1qoBqbn8pQdehyLbg
+https://uoa-my.sharepoint.com/:i:/g/personal/jrug001_uoa_auckland_ac_nz/EY4tZbJAxLpOmVChz_DHUOEBJLxMU1_AMz6Hzw1LWNcuRg
+https://uoa-my.sharepoint.com/:i:/g/personal/jrug001_uoa_auckland_ac_nz/EYt6QyNo4mZHgVC8w3TsjGwBw9nn5cwBq1S3dJt1tAztmA
+
+
+
 Part 1 - ROI Identification
 ------------------------------------------------
-1. Open JupyterLab and copy gCamp data files into cell_tools/IMAGING/image_stacks.
+1. Open JupyterLab, clear the image stacks directory and copy the GCAMP data files into cell_tools/IMAGING/image_stacks.
 2. Open the roi_identification notebook in JupyterLab
 3. Run the "Initialize" code block.
 4. Run the "Select image stack file(s)" code block.
