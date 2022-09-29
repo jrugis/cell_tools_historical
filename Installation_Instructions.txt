@@ -109,6 +109,14 @@ Check:
 
 ********************************************************
 
+Download the cell_tools project from GitHub
+-------------------------------------------
+
+Navigate to where you want the project to go, then...
+  git clone https://github.com/jrugis/cell_tools.git
+
+********************************************************
+
 Launch Notebook
 ---------------
  
@@ -116,7 +124,6 @@ Launch Notebook
     Navigate to and launch a notebook.
 
 ********************************************************
-
 
 To update notebooks to a subsequent newer version
 -------------------------------------------------
