@@ -33,7 +33,7 @@ Part 2 - GSK CSV Analysis
 1. Open Final_GSK_CSV_Automated in JupyterLab.
 2. Run the "Package Import" code block.
 3. Run the "Select data files for analysis" code block, wait until "Data Files" widget appears.
-   Select the "GSK Experiment 3" results folder from Data Files widget.
+   Select the GSK Experiment result folders from Data Files widget.
 4. Run the "Create a new analysis results directory" code block, wait until "Done." appears.
 5. Run the "Choose which region columns to analyze" code block, wait until "Region cols" widget(s) appear.
    Check the "Check this box to make stimulation zones the same for all files" widget.
@@ -47,6 +47,6 @@ Part 2 - GSK CSV Analysis
    Check the "Check this box to have automatic baselines for all" widget.
    Check the "Check this box to have starting baseline for all" widget.
 10. Run the "Calculation settings" code block, wait until plot(s) and widgets appear.
-    Set the "Slope calculation method" to "gaussian fit".
+    Set the "Slope calculation method" to "polynomial fit".
 11. Run "Plot analysis by region" code block, wait until plots stop being output and it says "Idle" at bottom of window.
 12. View results in the results folder.

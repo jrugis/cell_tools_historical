@@ -34,7 +34,7 @@ Part 2 - CSV Peaks Analysis
 1. Open Final_CSV_Peaks_Automated in JupyterLab.
 2. Run the "Package Import" code block.
 3. Run the "Select data files for analysis" code block, wait until "Data Files" widget appears.
-   Select the "CCH Experiment 5" results folder from Data Files widget.
+   Select the CCH Experiment result folders from Data Files widget.
 4. Run the "Create a new analysis results directory" code block, wait until "Done." appears.
 5. Run the "Choose which region columns to analyze" code block, wait until "Region cols" widget(s) appear.
 6. Run the "Initial Data Plotting" code block, wait until plot(s) appear.

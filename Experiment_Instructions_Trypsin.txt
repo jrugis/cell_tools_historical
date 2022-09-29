@@ -14,7 +14,7 @@ https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EgTG5Ecf
 
 Part 1 - ROI Identification
 --------------------------------------------------
-1. Open JupyterLab, clear the image stacks directory and copy the Trysin Experiment folders into image_stacks.
+1. Open JupyterLab, clear the image stacks directory and copy the Trypsin Experiment folders into image_stacks.
 2. Open Final_Fura_ROI_Detection_Automated in JupyterLab.
 3. Run the "Package Import" code block using the play button next to the clipboard icon.
 4. Run the "File Import" code block.
@@ -34,14 +34,14 @@ Part 2 - CSV Peaks Analysis
 1. Open Final_CSV_Peaks_Automated in JupyterLab.
 2. Run the "Package Import" code block.
 3. Run the "Select data files for analysis" code block, wait until "Data Files" widget appears.
-   Select the "Trypsin Experiment 4" results folder from Data Files widget.
+   Select the Trypsin Experiment result folders from Data Files widget.
 4. Run the "Create a new analysis results directory" code block, wait until "Done." appears.
-5. Run the "Choose which region columns to analyze" code block, wait until "Region cols" widget(s) appear.
+5. Run the "Choose which region columns to analyse" code block, wait until "Region cols" widget(s) appear.
 6. Run the "Initial Data Plotting" code block, wait until plot(s) appear.
 7. Skip over the three "Anomaly/Artifact Removal" code blocks.
 8. Run the "Set stimulation time zone ranges" code block, wait until plot(s) appear.
    Select stimulation zone range using "Stimulation zone" sliding range widget.
-   Set the zone range to 80-250.
+   Set the zone range to 80-249.
 9. Run the "Plot data and stimulation time zones" code block, wait until plot(s) appear.
    Check the "Check this box to have automatic baselines for all" widget.
    Check the "Check this box to have starting baseline for all" widget.
