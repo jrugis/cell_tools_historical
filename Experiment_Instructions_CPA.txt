@@ -15,7 +15,7 @@ https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EvmsP4y7
 Part 1 - ROI Identification
 --------------------------------------------------
 1. Open JupyterLab, clear the image stacks directory and copy the CPA Experiment folders into image_stacks.
-2. Open Final_Fura_ROI_Detection_Automated in JupyterLab.
+2. Open Ratiometric_ROI_Detection in JupyterLab.
 3. Run the "Package Import" code block using the play button next to the clipboard icon.
 4. Run the "File Import" code block.
 5. Run the "Create Results Folder(s)" code block, wait until "Done." appears.
@@ -31,7 +31,7 @@ Part 1 - ROI Identification
 
 Part 2 - CPA CSV Analysis
 --------------------------------------------------
-1. Open Final_CPA_CSV_Automated in JupyterLab.
+1. Open CSV_Peak_Detection_CPA in JupyterLab.
 2. Run the "Package Import" code block.
 3. Run the "Select data files for analysis" code block, wait until "Data Files" widget appears.
    Select the CPA Experiment result folders from Data Files widget.

@@ -14,7 +14,7 @@ https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/Eo0RcXw6
 Part 1 - ROI Identification
 --------------------------------------------------
 1. Open JupyterLab, clear the image stacks directory and copy the GSK Experiment folders into image_stacks.
-2. Open Final_Fura_ROI_Detection_Automated in JupyterLab.
+2. Open Ratiometric_ROI_Detection in JupyterLab.
 3. Run the "Package Import" code block using the play button next to the clipboard icon.
 4. Run the "File Import" code block.
 5. Run the "Create Results Folder(s)" code block, wait until "Done." appears.
@@ -30,7 +30,7 @@ Part 1 - ROI Identification
 
 Part 2 - GSK CSV Analysis
 --------------------------------------------------
-1. Open Final_GSK_CSV_Automated in JupyterLab.
+1. Open CSV_Peak_Detection_GSK in JupyterLab.
 2. Run the "Package Import" code block.
 3. Run the "Select data files for analysis" code block, wait until "Data Files" widget appears.
    Select the GSK Experiment result folders from Data Files widget.

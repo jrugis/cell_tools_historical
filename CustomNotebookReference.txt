@@ -1,13 +1,13 @@
-Fura_ROI_Detection_Automated
+Ratiometric_ROI_Detection
 
 Purpose:
 The purpose of this notebook is to automatically detect and draw ROIs around individual cells in 340nm
 Tif movie files. These ROIs are then used to gather fluorescence data per pixel over time from 340/380nm Tif
 movie files. The plotted 340/380nm fluorescence over time is then outputted for each ROI along with an excel
 file containing the total data for all ROIs. This notebook is meant to be used prior to use of the 
-Final_CSV_Peaks_Automated or Final_CPA_CSV_Automated notebooks, as the output of this notebook contains 
-the input for these notebooks. While the two CSV_Automated notebooks can also receive manually drawn ROI 
-data excel files as inputs, the Fura_ROI_Detection_Automated notebook is recommended for cases where the 
+CSV_Peak_Detection notebooks, as the output of this notebook contains 
+the input for these notebooks. While the CSV_Peak_Detection notebooks can also receive manually drawn ROI 
+data excel files as inputs, the Ratiometric_ROI_Detection notebook is recommended for cases where the 
 analysis of a high quantity of experiments is desired, in order to save time.
 
 Input:
@@ -91,29 +91,29 @@ pdf file representing the average of the ROI data that is outputted by the noteb
 the averaged data along with a plot of the standard deviation from this average every 10 seconds, regardless of the FPS selected previously by the user.
 
 
-Final_CSV_Peaks_Automated / Final_CPA_CSV_Automated / Final_GSK_CSV_Automated Notebooks
+CSV_Peak_Detection / CSV_Peak_Detection_CPA / CSV_Peak_Detection_GSK Notebooks
 
 Purpose:
 The purpose of these notebooks is to quantitatively analyze csv excel files containing raw fluorescense data of ROIs either automatically or manually 
-drawn on 340/380nm ratio tif images. While the three notebooks are similar, the Final_CPA_CSV_Automated notebook is made specifically to analyze data from 
-CPA experiments and the Final_GSK_CSV_Automated notebook is amde specifically to analyze data from GSK experiments.
-The Final_CSV_Peaks_Automated notebook is more broadly applicable, allowing for the analysis of data from many different types of 
+drawn on 340/380nm ratio tif images. While the three notebooks are similar, the CSV_Peak_Detection_CPA notebook is made specifically to analyze data from 
+CPA experiments and the CSV_Peak_Detection_GSK notebook is amde specifically to analyze data from GSK experiments.
+The CSV_Peak_Detection notebook is more broadly applicable, allowing for the analysis of data from many different types of 
 experiments, specifically those in which the user is interested in peaks. The outputs of all three notebooks are the same, and allow for the user 
 to quickly obtain and display the analysis results of the notebooks.
 
 Input:
 The input of these notebooks is the same "_TOTAL-stimALL.csv" excel file contained within the output of the Fura_ROI_Detection_Automated notebook, or 
 the output of the TILLvision excel tool used on manually drawn ROIs within TILLvision. If the user wishes to use an excel file obtained from manual ROI 
-drawing on TILLvision, it is important to have the same folder layout as the output of the Fura_ROI_Detection_Automated notebook. Specifically, within 
+drawing on TILLvision, it is important to have the same folder layout as the output of the Ratiometric_ROI_Detection notebook. Specifically, within 
 the "results" folder should be a named folder containing the excel file starting with the same name and ending with "_TOTAL-stimALL.csv".
 
 Processing:
 The notebooks begin by prompting the user to select which files within the "results" folder that the user would like to have analyzed. The CSV notebooks then 
 create a "Analysis_Results" folder within each results folder within "results" for the selected files. The notebooks will send all outputs to this folder, in 
-order to allow easy distinction between the outputs of these notebooks and the outputs of the Fura_ROI_Detection_Automated notebook. Once these selections have 
+order to allow easy distinction between the outputs of these notebooks and the outputs of the Ratiometric_ROI_Detection notebook. Once these selections have 
 been made, the notebooks prompt the user to select which ROIs should be included in the analysis for each file, along with displaying a checkbox for if the excel 
 file contains an average column. The notebooks default to having all ROIs selected and the checkbox checked, as this is the most common selection for when the 
-input excel files have been outputted by the Fura_ROI_Detection_Automated notebook. If the user wishes to use excel files generated from manually drawn ROIs, 
+input excel files have been outputted by the Ratiometric_ROI_Detection notebook. If the user wishes to use excel files generated from manually drawn ROIs, 
 the "Includes an Avg Col" checkbox should be unchecked as these excel files will not contain an average column. Along with these prompts the notebooks will 
 also display two checkboxes, the first of which allows the user to choose whether to have the stimulation zones the same for all files during the analysis. 
 While this checkbox is default unchecked, it is recommended that the user checks this box if all the files they wish to analyze are of the same experiment 
@@ -152,7 +152,7 @@ response percentage standard deviation prompts. If automatic baselines has not b
 to select a baseline untimulated time zone. If automatic baselines has been selected, then a slider for selecting the length of the automatic baselines will 
 be displayed. If including starting baselines has been selected, then a slider for selecting the length of the starting baseline zone will be displayed.
 Otherwise nothing related to starting baselines will be displayed. The peak counting sensitivity prompt allows the user to select between various 
-sensitivity levels for the peak counting algorithm, with higher sensitivty resulting in more peaks being identified and vice versa. The slope calculation 
+sensitivity levels for the peak counting algorithm, with higher sensitivity resulting in more peaks being identified and vice versa. The slope calculation 
 method prompt allows for the user to select between different methods for slope calculation, including simple difference, three-neighbor numerical, 
 polynomial fit, and gaussian fit. If for some reason, such as lack of data points, the selected slope calculation method cannot be used, then the simple 
 difference method will automatically be used as a fallback by the notebooks, and the user will be notified of this change. The threshold standard deviations
@@ -162,7 +162,7 @@ the percentage response output. Once these selections are made by the user, the 
 
 Output:
 The output of these notebooks is sent to the "Analysis_Results" folders within each files specific "results" folder. The notebooks first clear this folder 
-of any previous outputs. Unlike the Final_CPA_CSV_Automated and Final_GSK_CSV_Automated notebooks, the Final_CSV_Peaks_Automated notebook outputs a 
+of any previous outputs. Unlike the CSV_Peak_Detection_CPA and CSV_Peak_Detection_GSK notebooks, the CSV_Peak_Detection notebook outputs a 
 "all_peaks" csv file for each ROI trace (and the average trace if included), which contains the time and value of all peaks found within that plot. 
 All three of the notebooks also output pdfs of each regions analyzed plot, ready for presentation. 
 All three of the notebooks output a pdf and png file of a plot showing all the ROI traces after the anomaly removal step had been completed. 
@@ -175,10 +175,19 @@ correlating with the second stimulation zone, and so on. For all three notebooks
 each zone, with the unstimulated average being zone specific if there are multiple zones and automatic baselines has been selected. The responding percentage 
 indicates the percentage of the region traces that went over the "response" threshold, which was adjusted by the response standard deviations option prompt.
 A column containing the starting unstimulated average is also included by all three notebooks if selection of a starting baseline was made by the user. 
-Along with these shared output values, the Final_CSV_Peaks_Automated's total data by zone csv file also includes a column for the total peak count per 
-stimulation zone and value of the first peak per stimulation zone. In contrast the Final_CPA_CSV_Automated's and Final_GSK_CSV_Automated's total data by zone
+Along with these shared output values, the the CSV_Peak_Detection's total data by zone csv file also includes a column for the total peak count per 
+stimulation zone and value of the first peak per stimulation zone. In contrast the CSV_Peak_Detection_CPA's and CSV_Peak_Detection_GSK's total data by zone
 csv files includes columns for the peak value of the maximum peak, without the baseline being subtracted. The maximum column remains unchanged between the 
-three notebooks, and still contains the peak value of the maximum peak with the baseline subtracted. The Final_CPA_CSV_Automated's and 
-Final_GSK_CSV_AUtomated's total data by zone csv files also includes a column containing the difference between the starting and unstimulated baseline 
+three notebooks, and still contains the peak value of the maximum peak with the baseline subtracted. The CSV_Peak_Detection_CPA's and 
+CSV_Peak_Detection_GSK's total data by zone csv files also includes a column containing the difference between the starting and unstimulated baseline 
 values, if inclusion of a starting baseline was selected by the user.
+
+
+
+
+
+
+
+
+
 

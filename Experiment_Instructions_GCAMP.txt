@@ -14,7 +14,7 @@ https://uoa-my.sharepoint.com/:i:/g/personal/jrug001_uoa_auckland_ac_nz/EYt6QyNo
 Part 1 - ROI Identification
 ------------------------------------------------
 1. Open JupyterLab, clear the image stacks directory and copy the GCAMP data files into cell_tools/IMAGING/image_stacks.
-2. Open the roi_identification notebook in JupyterLab
+2. Open the ROI_Detection notebook in JupyterLab
 3. Run the "Initialize" code block.
 4. Run the "Select image stack file(s)" code block.
    Select all four of the "Mistgcamp-3" files.
@@ -42,7 +42,7 @@ Part 1 - ROI Identification
 
 Part 2 - Post-Processing: Peak Detection
 ------------------------------------------------
-1. Open the post_processing_peaks notebook in JupyterLab
+1. Open the Peak_Detection notebook in JupyterLab
 2. Run the "Initialize" code block.
 3. Run the "Select a results directory and peak counting options" code block.
    Select the most current GCAMP results directory.
@@ -51,7 +51,7 @@ Part 2 - Post-Processing: Peak Detection
 
 Part 3 - Post-Processing: Frequency Analysis
 ------------------------------------------------
-1. Open the post_processing_frequency notebook in JupyterLab
+1. Open the Frequency_Analysis notebook in JupyterLab
 2. Run the "Initialize" code block.
 3. Run the "Select a results directory and set analysis frame range" code block.
    Select the most current GCAMP results directory.
@@ -65,7 +65,7 @@ Part 3 - Post-Processing: Frequency Analysis
 
 Part 4 - Post-Processing: Movie Making
 ------------------------------------------------
-1. Open the post_processing_movie notebook in JupyterLab
+1. Open the Movie_Making notebook in JupyterLab
 2. Run the "Initialize" code block.
 3. Run the "Select an image stack, a results directory and one or more regions" code block.
    Select the image stack "Mistgcamp-3_0002.tif".
