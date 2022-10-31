@@ -9,9 +9,9 @@ https://uoa-my.sharepoint.com/:i:/g/personal/jrug001_uoa_auckland_ac_nz/EQoAvttj
 https://uoa-my.sharepoint.com/:i:/g/personal/jrug001_uoa_auckland_ac_nz/EY4tZbJAxLpOmVChz_DHUOEBJLxMU1_AMz6Hzw1LWNcuRg
 https://uoa-my.sharepoint.com/:i:/g/personal/jrug001_uoa_auckland_ac_nz/EYt6QyNo4mZHgVC8w3TsjGwBw9nn5cwBq1S3dJt1tAztmA
 
+Complete steps 1 and 2, then optionally steps 3 and 4.
 
-
-Part 1 - ROI Identification
+Step 1 - ROI Identification
 ------------------------------------------------
 1. Open JupyterLab, clear the image stacks directory and copy the GCAMP data files into cell_tools/IMAGING/image_stacks.
 2. Open the ROI_Detection notebook in JupyterLab
@@ -40,7 +40,7 @@ Part 1 - ROI Identification
 15. Run the "RESULTS: Plot responses for all stimulation frequencies and regions using the mask from above" code block.
     After a few seconds, a number of plots will appear.
 
-Part 2 - Post-Processing: Peak Detection
+Step 2 - Post-Processing: Peak Detection
 ------------------------------------------------
 1. Open the Peak_Detection notebook in JupyterLab
 2. Run the "Initialize" code block.
@@ -49,7 +49,7 @@ Part 2 - Post-Processing: Peak Detection
 4. Run the "Peak counting over all regions" code block.
    Plots will appear.
 
-Part 3 - Post-Processing: Frequency Analysis
+Step 3 - Post-Processing: Frequency Analysis
 ------------------------------------------------
 1. Open the Frequency_Analysis notebook in JupyterLab
 2. Run the "Initialize" code block.
@@ -63,7 +63,7 @@ Part 3 - Post-Processing: Frequency Analysis
 6. Re-run the "Frequency analysis of results over all regions" code block.
    A number of plots will appear.
 
-Part 4 - Post-Processing: Movie Making
+Step 4 - Post-Processing: Movie Making
 ------------------------------------------------
 1. Open the Movie_Making notebook in JupyterLab
 2. Run the "Initialize" code block.

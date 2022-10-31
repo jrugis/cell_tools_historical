@@ -3,7 +3,7 @@
 
 Your computer will need to be setup with a number of prerequisite software tools, namely:
 
-- Xcode (MAC only)
+- Git
 - NodeJS
 - ffmpeg
 - Python3 - with packages:
@@ -16,13 +16,15 @@ Your computer will need to be setup with a number of prerequisite software tools
 
 
 Examples of ways to install the prerequisites and run the notebooks follow.
-  
 
-##################################################################
-##################################################################
-This section is for MAC (using Terminal commands).
-##################################################################
-##################################################################
+
+
+
+################################################################################
+################################################################################
+                 This section is for Mac.
+################################################################################
+################################################################################
 
 NOTE: If using a newer MAC running macOS Catalina operating system additional installation steps are required.
 
@@ -33,86 +35,51 @@ Additional macOS Catalina instructions
 
 ********************************************************
 
-Install Xcode
--------------
-
-  xcode-select --install
-
-Check:
-  xcode-select --version
-  git --version
-
-********************************************************
-
-Install HomeBrew
+Install Anaconda
 ----------------
 
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+Go to https://www.anaconda.com/products/distribution and grab the Mac installer package.
+Then run the installer.
 
-Check:
-  brew --version
-
-********************************************************
-
-Install NodeJS
---------------
-
-  brew install node
-  
-Check:
-  node -v
-  npm -v  
+When you first run Anaconda Navigator you might need to update it. Then relaunch.
 
 ********************************************************
 
-Install ffmpeg
---------------
+Set Anaconda environments
+-------------------------
 
-  brew install ffmpeg
-  
-Check:
-  ffmpeg 
-
-********************************************************
-
-Install Python3
----------------
-
- brew install python3
-
-Check:
-  python3 --version
-  pip3 --version
+Anaconda Navigator | Environments | Not installed
+  install: ffmpeg, ipympl, nodejs
+  (This gives you an older version of nodejs which will have to be changed later.)
 
 ********************************************************
 
 Install python packages
 -----------------------
 
-  pip3 install numpy scipy matplotlib
-  pip3 install scikit-image scikit-learn
-  pip3 install jupyterlab ipywidgets ipyfilechooser ipympl
-  Pip3 install opencv-python
+Open up Terminal and type commands:
+conda install ipywidgets
+conda install -c conda-forge ipyfilechooser
+conda install -c conda-forge opencv
+conda install nodejs -c conda-forge --repodata-fn=repodata.json
 
 ********************************************************
 
 Install JupyterLab extension
 ----------------------------
 
-  jupyter labextension install @jupyter-widgets/jupyterlab-manager
-  jupyter labextension install jupyter-matplotlib
-  jupyter nbextension enable --py widgetsnbextension 
-
-Check:
-  jupyter labextension list
-
+Terminal commands:
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install jupyter-matplotlib
+jupyter nbextension enable --py widgetsnbextension
 
 ********************************************************
 
-Download the cell_tools project from GitHub
+Download the cell_tools project from github
 -------------------------------------------
 
-Navigate to where you want the project to go, then...
+Terminal commands:
+  Navigate to where you want the project to go, then...
   git clone https://github.com/jrugis/cell_tools.git
 
 ********************************************************
@@ -120,21 +87,25 @@ Navigate to where you want the project to go, then...
 Launch Notebook
 ---------------
  
-  jupyter-lab
-    Navigate to and launch a notebook.
+Launch JupyterLab from Anaconda Navigator.
+Navigate to and launch the desired notebook.
 
 ********************************************************
 
 To update notebooks to a subsequent newer version
 -------------------------------------------------
 
+Open up Terminal.
 Navigate into your cell_tools folder, then...
   git fetch origin
   git reset --hard origin/master
   
 NOTE: This operation will leave your results folder intact, but
       will overwrite any changes that you made in your copy of 
-      the notebook !!!!!! 
+      the notebooks !!!!!! 
+
+
+
 
 
 ################################################################################
@@ -146,16 +117,16 @@ NOTE: This operation will leave your results folder intact, but
 Install git
 -----------
 
-  Download and execute installer: https://git-scm.com/download/win
-    default editor: Nano
-    credential helper: none
+Download and execute installer: https://git-scm.com/download/win
+  default editor: Nano
+  credential helper: none
   
 ********************************************************
 
 Install Anaconda
 ----------------
 
-  Download and install: https://www.anaconda.com/products/individual
+Download and install: https://www.anaconda.com/products/individual
       
 ********************************************************
 
@@ -163,28 +134,28 @@ Set Anaconda environments
 -------------------------
 
 Anaconda Navigator | Environments | Not installed
-    install: ffmpeg, ipympl, nodejs 
+  install: ffmpeg, ipympl, nodejs 
 
 ********************************************************
 
 Install python packages
 -----------------------
 
-  Anaconda Navigator | Home | CMD.exe Prompt
-	pip install ipywidgets
-	pip install ipyfilechooser
-	pip install opencv-python
+Anaconda Navigator | Home | CMD.exe Prompt
+  pip install ipywidgets
+  pip install ipyfilechooser
+  pip install opencv-python
 
 ********************************************************
 
 Install JupyterLab extension
 ----------------------------
 
-  Anaconda Navigator | Home | CMD.exe Prompt
-    jupyter lab build
-    jupyter labextension install @jupyter-widgets/jupyterlab-manager
-    jupyter labextension install jupyter-matplotlib
-    jupyter nbextension enable --py widgetsnbextension 
+Anaconda Navigator | Home | CMD.exe Prompt
+  jupyter lab build
+  jupyter labextension install @jupyter-widgets/jupyterlab-manager
+  jupyter labextension install jupyter-matplotlib
+  jupyter nbextension enable --py widgetsnbextension 
 
 Check:
   jupyter labextension list
@@ -194,9 +165,9 @@ Check:
 Download the cell_tools project from github
 -------------------------------------------
 
-  Anaconda Navigator | Home | CMD.exe Prompt
-    Navigate to where you want the project to go, then...
-      git clone https://github.com/jrugis/cell_tools.git
+Anaconda Navigator | Home | CMD.exe Prompt
+  Navigate to where you want the project to go, then...
+  git clone https://github.com/jrugis/cell_tools.git
 
 ********************************************************
 
@@ -205,7 +176,7 @@ Launch Notebook
  
 Anaconda Navigator | Home | CMD.exe Prompt
   jupyter-lab
-    Navigate to and launch the notebook: roi_identification.ipynb
+    Navigate to and launch the desired notebook.
 
 ********************************************************
 
@@ -219,7 +190,7 @@ Anaconda Navigator | Home | CMD.exe Prompt
   
 NOTE: This operation will leave your results folder intact, but
       will overwrite any changes that you made in your copy of 
-      the notebook !!!!!! 
+      the notebooks !!!!!! 
 
 ********************************************************
 ********************************************************

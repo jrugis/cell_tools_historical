@@ -9,9 +9,9 @@ https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EuyKiMhG
 https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/Em2IdiQNzflBvi3Td7xJVLIBdVoLHjKVS2FMaLzEve6hkQ
 https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/Eo0RcXw67TdNtQwhw_d1Ao8BvAGfO7lF6CfKFboSHUCtnw
 
+Complete both steps.
 
-
-Part 1 - ROI Identification
+Step 1 - ROI Identification
 --------------------------------------------------
 1. Open JupyterLab, clear the image stacks directory and copy the GSK Experiment folders into image_stacks.
 2. Open Ratiometric_ROI_Detection in JupyterLab.
@@ -28,7 +28,7 @@ Part 1 - ROI Identification
 13. Run the "Plotting and Data Collection" code block, wait until "Done." appears.
 14. If desired (optional), run the "Optional plotting of individual pixel intensities of each ROI and average" code block, wait until "Done." appears.
 
-Part 2 - GSK CSV Analysis
+Step 2 - GSK CSV Analysis
 --------------------------------------------------
 1. Open CSV_Peak_Detection_GSK in JupyterLab.
 2. Run the "Package Import" code block.

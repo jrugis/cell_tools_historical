@@ -10,9 +10,9 @@ https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EhKigESg
 https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EskTR7eAptFLs2GXgOFhV0oB-FJYMzK6JJCVbj6veWlaeg
 https://uoa-my.sharepoint.com/:f:/g/personal/jrug001_uoa_auckland_ac_nz/EvmsP4y74T9Hr4_FmkhVmPoB6r2PmBEabWOLaewkcYyoMA
 
+Complete both steps.
 
-
-Part 1 - ROI Identification
+Step 1 - ROI Identification
 --------------------------------------------------
 1. Open JupyterLab, clear the image stacks directory and copy the CPA Experiment folders into image_stacks.
 2. Open Ratiometric_ROI_Detection in JupyterLab.
@@ -29,7 +29,7 @@ Part 1 - ROI Identification
 13. Run the "Plotting and Data Collection" code block, wait until "Done." appears.
 14. If desired (optional), run the "Optional plotting of individual pixel intensities of each ROI and average" code block, wait until "Done." appears.
 
-Part 2 - CPA CSV Analysis
+Step 2 - CPA CSV Analysis
 --------------------------------------------------
 1. Open CSV_Peak_Detection_CPA in JupyterLab.
 2. Run the "Package Import" code block.
